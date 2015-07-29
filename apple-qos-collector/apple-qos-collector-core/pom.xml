@@ -14,6 +14,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.appleframework.qos</groupId>
+			<artifactId>apple-qos-core</artifactId>
+			<version>${qos.core.verison}</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -21,10 +26,6 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.appleframework.config</groupId>
-			<artifactId>apple-config-core</artifactId>
 		</dependency>
 	</dependencies>
 </project>

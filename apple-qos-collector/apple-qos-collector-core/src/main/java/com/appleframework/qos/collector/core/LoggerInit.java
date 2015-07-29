@@ -5,14 +5,14 @@ import java.util.Date;
 import java.util.Enumeration;
 import java.util.Properties;
 
+
+import com.appleframework.qos.core.config.PropertyConfigurer;
+import com.appleframework.qos.collector.core.utils.Constants;
+import com.appleframework.qos.collector.core.utils.DateFormatUtils;
 import org.apache.log4j.Appender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-import com.appleframework.config.core.PropertyConfigurer;
-import com.appleframework.qos.collector.core.utils.Constants;
-import com.appleframework.qos.collector.core.utils.DateFormatUtils;
 
 /**
  * 
@@ -59,9 +59,7 @@ public class LoggerInit {
         defaultProperties.put("log4j.appender.QosDataLogFile.Append", "true");
     }
 
-
     public static void initLogger() {
-
         if (initOK) {
             return;
         }
@@ -73,24 +71,26 @@ public class LoggerInit {
             
         	Date now = new Date();
         	String datePattern = DateFormatUtils.pattern8;
-        	Integer logFileGenTypeP = PropertyConfigurer.getInteger(LOG_FILE_GEN_TYPE_KEY);
+        	Integer logFileGenTypeP = PropertyConfigurer.getInteger(LOG_FILE_GEN_TYPE_KEY, 0);
         	if(null != logFileGenTypeP && logFileGenTypeP == logFileGenHour) {
         		datePattern = "yyyyMMddHH";
         		logFileGenIntervalTime = logFileGenHourInterval;
         	}
         	
         	String strDate = DateFormatUtils.toString(now, datePattern);
-        	String application = PropertyConfigurer.getString(Constants.APPLICATION_NAME);
+        	String application = PropertyConfigurer.getString(Constants.APPLICATION_NAME, "");
         	logFileGenStartTime =  DateFormatUtils.toDate(strDate, datePattern).getTime();
+
             // 使缺省的配置生效(Logger, Appender)
             PropertyConfigurator.configure(defaultProperties);
+
+            // 日志存放位置
             String date = DateFormatUtils.toString(now, datePattern);
-            String filePath = "/work/logs/qos/" + application + "_" + date + ".log";
-            File logFile = new File("/work/logs/qos/");
+            String filePath = Constants.BASE_FILE_PATH + application + "_" + date + ".log";
+            File logFile = new File(Constants.BASE_FILE_PATH);
             if(!logFile.exists()) {
             	logFile.mkdir();
             }
-            
             setFileAppender(filePath, LOG_NAME_GOS_DATA);
 
             initOK = true;

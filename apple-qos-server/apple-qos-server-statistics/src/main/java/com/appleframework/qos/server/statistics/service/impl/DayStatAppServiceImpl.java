@@ -1,17 +1,15 @@
 package com.appleframework.qos.server.statistics.service.impl;
 
-import java.util.Date;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
-
-import org.springframework.context.annotation.Lazy;
-import org.springframework.stereotype.Service;
-
-import com.appleframework.orm.mybatis.query.MapQuery;
+import com.appleframework.qos.core.orm.MapQuery;
 import com.appleframework.qos.server.core.entity.DayStatApp;
 import com.appleframework.qos.server.statistics.dao.DayStatAppDao;
 import com.appleframework.qos.server.statistics.service.DayStatAppService;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+import java.util.Date;
 
 @Service("dayStatAppService")
 @Lazy(false)

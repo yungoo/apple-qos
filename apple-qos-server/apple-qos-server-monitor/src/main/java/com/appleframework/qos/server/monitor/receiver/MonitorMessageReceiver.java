@@ -4,11 +4,10 @@ import java.util.Date;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import com.appleframework.qos.core.config.PropertyConfigurer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.appleframework.config.core.PropertyConfigurer;
-import com.appleframework.jms.kafka.consumer.ObjectMessageConsumer;
 import com.appleframework.qos.collector.core.Statistic;
 import com.appleframework.qos.collector.core.URL;
 import com.appleframework.qos.collector.core.utils.Constants;
@@ -54,7 +53,11 @@ public class MonitorMessageReceiver extends ObjectMessageConsumer {
 	public void setMinStatService(MinStatService minStatService) {
 		this.minStatService = minStatService;
 	}
-    
+
+    public MonitorMessageReceiver() {
+        logger.info("Message Receiver created");
+    }
+
 	public void init() {
     	super.init();
     	saveQueue = new LinkedBlockingQueue<URL>(100000);
@@ -348,7 +351,7 @@ public class MonitorMessageReceiver extends ObjectMessageConsumer {
     }
     
     @Override
-	public void processMessage() {
+	public void processMessage(Object message) {
 		URL statistics = (URL) message;
 		saveQueue.offer(statistics);
 		countQueue.offer(statistics);

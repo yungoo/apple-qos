@@ -1,6 +1,5 @@
 package com.appleframework.qos.server.statistics.service;
 
-import com.appleframework.exception.ServiceException;
 import com.appleframework.qos.server.core.entity.AppInfo;
 
 public interface AppInfoService {

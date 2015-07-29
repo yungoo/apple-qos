@@ -11,7 +11,7 @@ public class Constants {
 	public static final String LOCALHOST_KEY  = "localhost";
 	
 	public static final String DEFAULT_KEY_PREFIX = "default.";
-	
+
 	public static final String ANYHOST_KEY = "anyhost";
 
     public static final String ANYHOST_VALUE = "0.0.0.0";

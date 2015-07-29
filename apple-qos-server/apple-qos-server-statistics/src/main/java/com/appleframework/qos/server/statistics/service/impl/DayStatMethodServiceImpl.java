@@ -5,10 +5,10 @@ import java.util.Date;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
+import com.appleframework.qos.core.orm.MapQuery;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
-import com.appleframework.orm.mybatis.query.MapQuery;
 import com.appleframework.qos.server.core.entity.DayStatMethod;
 import com.appleframework.qos.server.statistics.dao.DayStatMethodDao;
 import com.appleframework.qos.server.statistics.service.DayStatMethodService;

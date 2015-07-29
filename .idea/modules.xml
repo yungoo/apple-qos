@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apple-qos.iml" filepath="$PROJECT_DIR$/apple-qos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector.iml" filepath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/apple-qos-collector-core.iml" filepath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/apple-qos-collector-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/apple-qos-collector-dubbo.iml" filepath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/apple-qos-collector-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/apple-qos-collector-spring.iml" filepath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/apple-qos-collector-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-core/apple-qos-core.iml" filepath="$PROJECT_DIR$/apple-qos-core/apple-qos-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server.iml" filepath="$PROJECT_DIR$/apple-qos-server/apple-qos-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/apple-qos-server-agent.iml" filepath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/apple-qos-server-agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/apple-qos-server-core.iml" filepath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/apple-qos-server-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/apple-qos-server-monitor.iml" filepath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/apple-qos-server-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/apple-qos-server-statistics.iml" filepath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/apple-qos-server-statistics.iml" />
+    </modules>
+  </component>
+</project>

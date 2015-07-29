@@ -5,9 +5,9 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.appleframework.qos.core.orm.MapQuery;
 import org.springframework.stereotype.Service;
 
-import com.appleframework.orm.mybatis.query.MapQuery;
 import com.appleframework.qos.server.core.entity.MinCollect;
 import com.appleframework.qos.server.statistics.dao.MinCollectDao;
 import com.appleframework.qos.server.statistics.model.DaySumApp;

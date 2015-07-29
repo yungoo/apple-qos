@@ -32,7 +32,7 @@ import com.alibaba.dubbo.common.utils.NetUtils;
 import com.alibaba.dubbo.container.Container;
 import com.alibaba.dubbo.registry.NotifyListener;
 import com.alibaba.dubbo.registry.RegistryService;
-import com.appleframework.config.core.PropertyConfigurer;
+import com.appleframework.qos.core.config.PropertyConfigurer;
 import com.appleframework.qos.server.monitor.utils.SpringUtility;
 
 /**

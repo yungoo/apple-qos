@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="apple-qos-collector-core" />
+        <module name="apple-qos-collector-dubbo" />
+        <module name="apple-qos-collector-spring" />
+        <module name="apple-qos-core" />
+        <module name="apple-qos-server-agent" />
+        <module name="apple-qos-server-core" />
+        <module name="apple-qos-server-monitor" />
+      </profile>
+      <profile default="false" name="Annotation profile for apple-qos-server-statistics" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="apple-qos-server-statistics" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apple-qos" target="1.5" />
+      <module name="apple-qos-collector" target="1.5" />
+      <module name="apple-qos-collector-core" target="1.5" />
+      <module name="apple-qos-collector-dubbo" target="1.5" />
+      <module name="apple-qos-collector-spring" target="1.5" />
+      <module name="apple-qos-core" target="1.5" />
+      <module name="apple-qos-server" target="1.5" />
+      <module name="apple-qos-server-agent" target="1.5" />
+      <module name="apple-qos-server-core" target="1.5" />
+      <module name="apple-qos-server-monitor" target="1.5" />
+      <module name="apple-qos-server-statistics" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

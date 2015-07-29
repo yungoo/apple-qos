@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-collector" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics" charset="UTF-8" />
+  </component>
+</project>

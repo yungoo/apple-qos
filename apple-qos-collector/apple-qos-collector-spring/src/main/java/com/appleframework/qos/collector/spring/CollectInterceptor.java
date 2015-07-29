@@ -3,10 +3,10 @@ package com.appleframework.qos.collector.spring;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.appleframework.qos.core.config.PropertyConfigurer;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
-import com.appleframework.config.core.PropertyConfigurer;
 import com.appleframework.qos.collector.core.CollectApi;
 import com.appleframework.qos.collector.core.LoggerInit;
 import com.appleframework.qos.collector.core.utils.Constants;

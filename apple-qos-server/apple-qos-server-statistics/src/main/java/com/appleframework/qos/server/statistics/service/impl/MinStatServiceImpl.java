@@ -5,10 +5,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.appleframework.qos.core.orm.PageQuery;
+import com.appleframework.qos.core.orm.Pagination;
 import org.springframework.stereotype.Service;
 
-import com.appleframework.model.page.Pagination;
-import com.appleframework.orm.mybatis.query.PageQuery;
 import com.appleframework.qos.server.core.entity.MinStat;
 import com.appleframework.qos.server.statistics.dao.MinStatDao;
 import com.appleframework.qos.server.statistics.service.MinStatService;
@@ -20,7 +20,7 @@ public class MinStatServiceImpl implements MinStatService {
 	private MinStatDao minStatDao;
 	
 	@SuppressWarnings("deprecation")
-	public List<MinStat> findPageByAppAndDay(Pagination page, Date statDay, 
+	public List<MinStat> findPageByAppAndDay(Pagination page, Date statDay,
 			String consumerAppName, String providerAppName) {
 		PageQuery query = PageQuery.create(page);
 		query.addParameters("consumerAppName", consumerAppName);

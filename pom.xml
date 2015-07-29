@@ -14,12 +14,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.version>0.0.2-SNAPSHOT</project.version>
-		<spring.version>4.0.5.RELEASE</spring.version>
-		<apple.version>0.0.3.RELEASE</apple.version>
-		<config.version>0.1.1.RELEASE</config.version>
-		<jms.version>0.0.3.RELEASE</jms.version>
-		<boot.version>0.1.1.RELEASE</boot.version>
+		<spring.version>4.1.1.RELEASE</spring.version>
+		<spring.boot.version>1.1.4.RELEASE</spring.boot.version>
 		<aspectj.version>1.6.8</aspectj.version>
+		<kafka.version>0.8.2.1</kafka.version>
+
+		<jackson.core.version>2.5.0</jackson.core.version>
+		<jackson.databind.version>2.5.0</jackson.databind.version>
+
+		<slf4j.version>1.7.7</slf4j.version>
+		<logback.version>1.1.3</logback.version>
+		<xxx_over_slf4j.version>1.7.7</xxx_over_slf4j.version>
+
+		<google.guava.version>15.0</google.guava.version>
+
+		<qos.core.verison>0.0.1-SNAPSHOT</qos.core.verison>
 	</properties>
 
 	<dependencyManagement>
@@ -31,59 +40,6 @@
 				<version>4.8.1</version>
 				<scope>test</scope>
 			</dependency>
-			
-			<dependency>
-				<groupId>com.appleframework</groupId>
-				<artifactId>appleframework-core</artifactId>
-				<version>${apple.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>com.appleframework</groupId>
-				<artifactId>appleframework-orm</artifactId>
-				<version>${apple.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>com.appleframework</groupId>
-				<artifactId>appleframework-web</artifactId>
-				<version>${apple.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>com.appleframework</groupId>
-				<artifactId>appleframework-exception</artifactId>
-				<version>${apple.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.appleframework.config</groupId>
-				<artifactId>apple-config-core</artifactId>
-				<version>${config.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>com.appleframework.config</groupId>
-				<artifactId>apple-config-diamond</artifactId>
-				<version>${config.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>com.appleframework.jms</groupId>
-				<artifactId>apple-jms-kafka</artifactId>
-				<version>${jms.version}</version>
-			</dependency>
-		
-			<dependency>
-				<groupId>com.appleframework.boot</groupId>
-				<artifactId>apple-boot-spring</artifactId>
-				<version>${boot.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.appleframework.boot</groupId>
-				<artifactId>apple-boot-jetty</artifactId>
-				<version>${boot.version}</version>
-			</dependency>			
 
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -97,22 +53,76 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
 				<artifactId>spring-test</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
-			
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring.boot.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>dubbo</artifactId>
 				<version>2.5.3</version>
 			</dependency>
-			
+
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka_2.10</artifactId>
+				<version>${kafka.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
-				<version>1.2.16</version>
+				<version>1.2.17</version>
 			</dependency>
-			
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${xxx_over_slf4j.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>log4j-over-slf4j</artifactId>
+				<version>${xxx_over_slf4j.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jul-to-slf4j</artifactId>
+				<version>${xxx_over_slf4j.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback.version}</version>
+				<scope>compile</scope>
+			</dependency>
+
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
@@ -129,10 +139,17 @@
 				<artifactId>c3p0</artifactId>
 				<version>0.9.1.2</version>
 			</dependency>
-			
+
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>1.1.0.Final</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<modules>
+		<module>apple-qos-core</module>
 		<module>apple-qos-collector</module>
 		<module>apple-qos-server</module>
 	</modules>

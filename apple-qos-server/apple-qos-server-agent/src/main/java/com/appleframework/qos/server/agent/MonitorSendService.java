@@ -1,8 +1,8 @@
 package com.appleframework.qos.server.agent;
 
-import com.appleframework.jms.core.utils.ByteUtils;
 import com.appleframework.qos.collector.core.URL;
 
+import com.appleframework.qos.core.utils.ByteUtils;
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 
