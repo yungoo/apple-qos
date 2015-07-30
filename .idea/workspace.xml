@@ -1,152 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="apple-qos-server-statistics:war" />
+      <artifact name="apple-qos-server-statistics:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a8db6c9-ad11-4c89-94ed-bd92abe80bee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/service/agent/app/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/freemarker/directive/BaseDirective.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/utils/ByteUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/helper/CountHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/DB2Dialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/DBMS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/mvc/DataTablesResultSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/DerbyDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/Dialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/DialectClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/freemarker/directive/DirectiveUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/H2Dialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/HSQLDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/orm/MapQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_10_0_8_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_8_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_ehcache_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/MySQLDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/receiver/ObjectMessageConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/OracleDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dto/PageMyBatis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/orm/PageQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/orm/Paginable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/orm/Pagination.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/freemarker/directive/PaginationDirective.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/PaginationExecutor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/PaginationInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dto/table/PagingCriteria.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/PagingParametersFinder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/PostgreSQLDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/PropertyConfigurer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/helper/Reflections.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/SQLServer2005Dialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/SQLServerDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dto/table/SearchField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/ServiceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/orm/SimplePage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dto/table/SortDirection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dto/table/SortField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/utils/SpringUtility.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/helper/SqlRemoveHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/helper/StringHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/SybaseDialect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/mvc/TableParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/mvc/TableParamArgumentResolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/apple-qos-collector-core.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/apple-qos-server-agent.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/apple-qos-server-core.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/apple-qos-server-monitor.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/apple-qos-server-statistics.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/apple_qos_server_statistics_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/apple_qos_server_statistics_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-qos-core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/AppInfoMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/AppInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/AppInfoMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/AppInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/AppInfoService.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/AppInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/AppInfoServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/AppInfoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/src/main/java/com/appleframework/qos/collector/spring/CollectInterceptor.java" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/src/main/java/com/appleframework/qos/collector/spring/CollectInterceptor.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/apple-qos-server-statistics-0.0.2-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/maven-base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/maven-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/collapsed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/expanded.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/external.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_error_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_info_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_success_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_warning_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/logos/build-by-maven-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/logos/build-by-maven-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/logos/maven-feather.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/newwindow.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/utils/Constants.java" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/utils/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatAppDao.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatAppDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatAppMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatAppMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatAppServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatAppServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatCodeDao.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatCodeDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatCodeMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatCodeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatCodeServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatCodeServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatMethodDao.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatMethodDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatMethodMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatMethodMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatMethodServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatMethodServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatNodeDao.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatNodeDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatNodeMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatNodeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatNodeServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/DayStatNodeServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/MinCollectDao.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/MinCollectDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/MinCollectMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/MinCollectMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/MinCollectMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/MinCollectMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/MinCollectServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/MinCollectServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/MinStatDao.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/MinStatDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/MinStatMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/MinStatMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/MinStatMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/MinStatMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/MinStatService.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/MinStatService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/MinStatServiceImpl.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/service/impl/MinStatServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/receiver/MonitorMessageReceiver.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/receiver/MonitorMessageReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/MonitorSendService.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/MonitorSendService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/NodeInfoMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/mapper/NodeInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/NodeInfoMapper.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/NodeInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/RegistryContainer.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/RegistryContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-context.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-datasource.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-datasource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-mvc.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-task.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-task.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-kafka.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-kafka.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-core/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/web/spring-servlet.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/web/spring-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/system.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/system.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/system.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/system.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/classes/system.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/classes/system.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="apple-qos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,63 +77,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="applicationContext-datasource.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-datasource.xml">
+      <file leaf-file-name="LoggerInit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.851852">
-              <caret line="126" column="67" selection-start-line="126" selection-start-column="67" selection-end-line="126" selection-end-column="67" />
-              <folding>
-                <marker date="1438187380000" expanded="true" signature="6691:6906" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractBeanFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/m2/repository/org/springframework/spring-beans/4.1.1.RELEASE/spring-beans-4.1.1.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <file leaf-file-name="LogFileReadStarter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlSessionFactoryBean.class" pinned="false" current-in-tab="true">
-        <entry file="jar://$USER_HOME$/m2/repository/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar!/org/mybatis/spring/SqlSessionFactoryBean.class">
+      <file leaf-file-name="system.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/system.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/web/spring-servlet.xml">
+      <file leaf-file-name="system.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.444445">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.8301527">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-context.xml">
+      <file leaf-file-name="spring-agent.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.555555">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.3333333">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monitor-datasource.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-datasource.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monitor-dubbo.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.6666665">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtendedPropertyPlaceholderConfigurer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/Statistic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -261,15 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis/dialect/Dialect.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis/helper/DialectHelper.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis/helper/SqlHelper.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis/util/PatternMatchUtils.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis/PaginationInterceptor.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis/model/DataPaging.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/freemarker/directive/PaginationDirective.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/DBMS.java" />
-        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/PageMyBatis.java" />
         <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dto/table/PagingCriteria.java" />
         <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/db/DB2Dialect.java" />
         <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/dialect/DialectClient.java" />
@@ -312,6 +239,15 @@
         <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/DayStatNodeMapper.xml" />
         <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/mapper/MinCollectMapper.xml" />
         <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/config/service/applicationContext-mvc.xml" />
+        <option value="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties" />
+        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml" />
+        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java" />
+        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java" />
+        <option value="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java" />
+        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml" />
+        <option value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml" />
       </list>
     </option>
   </component>
@@ -341,14 +277,6 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="apple-qos-server-statistics" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -356,7 +284,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="apple-qos-server-statistics" />
+          <option name="myItemId" value="apple-qos-server-agent" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -366,12 +294,12 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="apple-qos-server-statistics" />
+          <option name="myItemId" value="apple-qos-server-agent" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+          <option name="myItemId" value="Run Configurations" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RunConfigurationsNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -380,22 +308,36 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="apple-qos-server-statistics" />
+          <option name="myItemId" value="apple-qos-server-agent" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="Plugins" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
         </PATH_ELEMENT>
+      </PATH>
+      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="site" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="apple-qos" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="apple-qos" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -497,19 +439,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="apple-qos-server-monitor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,23 +457,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
+              <option name="myItemId" value="apple-qos-server-monitor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -561,121 +479,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
+              <option name="myItemId" value="apple-qos-server-monitor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -705,7 +509,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
+              <option name="myItemId" value="apple-qos-server-monitor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -721,7 +525,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -739,7 +543,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
+              <option name="myItemId" value="apple-qos-server-monitor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -748,14 +552,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -773,23 +569,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
+              <option name="myItemId" value="apple-qos-server-agent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -807,7 +587,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
+              <option name="myItemId" value="apple-qos-server-agent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-server-agent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-server-agent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-server-agent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -833,11 +699,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server" />
+              <option name="myItemId" value="apple-qos-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apple-qos-server-statistics" />
+              <option name="myItemId" value="apple-qos-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple-qos-core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -853,7 +795,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -902,7 +844,7 @@
       <recent name="com.appleframework.qos.core.config.spring" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RunManager" selected="Maven.apple-qos-server-agent [spring-boot:run]">
     <configuration default="false" name="apple-qos-server-monitor [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -1107,6 +1049,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/apple-qos-server-monitor-0.0.2-SNAPSHOT.jar" />
       <envs />
       <method />
     </configuration>
@@ -1204,6 +1147,7 @@
             <option name="goals">
               <list>
                 <option value="spring-boot:run" />
+                <option value="-Dlog.file.path=wtf" />
               </list>
             </option>
             <option name="profilesMap">
@@ -1296,8 +1240,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Maven.apple-qos-server-statistics [site:run]" />
-        <item index="1" class="java.lang.String" itemvalue="Maven.apple-qos-server-monitor [spring-boot:run]" />
+        <item index="0" class="java.lang.String" itemvalue="Maven.apple-qos-server-monitor [spring-boot:run]" />
+        <item index="1" class="java.lang.String" itemvalue="Maven.apple-qos-server-statistics [site:run]" />
       </list>
     </recent_temporary>
   </component>
@@ -1314,12 +1258,12 @@
       <workItem from="1438135948219" duration="1264000" />
       <workItem from="1438137257832" duration="34986000" />
       <workItem from="1438182273715" duration="519000" />
-      <workItem from="1438182834453" duration="4609000" />
+      <workItem from="1438182834453" duration="15380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41378000" />
+    <option name="totallyTimeSpent" value="52149000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,7 +1276,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="-201" width="1280" height="1001" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32563257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1340,20 +1284,20 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59515953" sideWeight="0.3513732" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20597738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23101777" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28272828" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39273927" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3473344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23424879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39163917" sideWeight="0.6486268" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39163917" sideWeight="0.6486268" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1394,7 +1338,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java</url>
-          <line>129</line>
+          <line>130</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1410,8 +1354,14 @@
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1420,171 +1370,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="205" column="21" selection-start-line="205" selection-start-column="21" selection-end-line="205" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="12" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/resources/system.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/PagingParametersFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/PaginationExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/m2/repository/org/springframework/spring-context/4.1.1.RELEASE/spring-context-4.1.1.RELEASE-sources.jar!/org/springframework/stereotype/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69807035">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/net/PlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/mybatis2/PaginationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="e#3056#3057#0" expanded="true" />
-            <element signature="e#3097#3098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/m2/repository/org/springframework/spring-web/4.1.1.RELEASE/spring-web-4.1.1.RELEASE-sources.jar!/org/springframework/web/context/ContextLoaderListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="e#5137#5138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/m2/repository/org/springframework/spring-web/4.1.1.RELEASE/spring-web-4.1.1.RELEASE-sources.jar!/org/springframework/web/context/ContextLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="402" column="0" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/m2/repository/org/springframework/spring-context/4.1.1.RELEASE/spring-context-4.1.1.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="756" column="0" selection-start-line="756" selection-start-column="0" selection-end-line="756" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/src/main/java/com/appleframework/qos/server/core/entity/NodeInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/src/main/java/com/appleframework/qos/server/core/entity/AppInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/NodeInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07633588">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/MinStatDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09541985">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/MinCollectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09541985">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatNodeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.114503816">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatMethodDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09541985">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatCodeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09541985">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/DayStatAppDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09541985">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/src/main/java/com/appleframework/qos/server/statistics/dao/AppInfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09541985">
@@ -1718,8 +1503,8 @@
         <state vertical-scroll-proportion="0.33333334">
           <caret line="1626" column="0" selection-start-line="1626" selection-start-column="0" selection-end-line="1626" selection-end-column="0" />
           <folding>
-            <element signature="e#21732#21896#0" expanded="true" />
-            <element signature="e#21895#21896#0" expanded="true" />
+            <element signature="e#21732#21896#0" expanded="false" />
+            <element signature="e#21895#21896#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1868,15 +1653,178 @@
         <state vertical-scroll-proportion="-3.851852">
           <caret line="126" column="67" selection-start-line="126" selection-start-column="67" selection-end-line="126" selection-end-column="67" />
           <folding>
-            <marker date="1438187380000" expanded="true" signature="6691:6906" placeholder="..." />
+            <marker date="1438187380000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/src/main/java/com/appleframework/qos/collector/spring/BeanNameAutoProxyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/CollectApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/m2/repository/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar!/org/mybatis/spring/SqlSessionFactoryBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
+        <state vertical-scroll-proportion="-6.148148">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/org/aopalliance/intercept/MethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/src/main/java/com/appleframework/qos/collector/spring/CollectInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/PropertyConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325766">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#671#672#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7111111">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/java/com/appleframework/qos/server/monitor/receiver/MonitorMessageReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="333" column="13" selection-start-line="333" selection-start-column="13" selection-end-line="333" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/Statistic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/system.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8301527">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>

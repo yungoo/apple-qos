@@ -47,9 +47,7 @@ public class LogFileReadStarter {
 
 	/**
 	 * 实时输出日志信息
-	 * 
-	 * @param logFile
-	 *            日志文件
+	 *
 	 * @throws FileNotFoundException 
 	 * @throws IOException
 	 */
@@ -61,6 +59,9 @@ public class LogFileReadStarter {
 				try {
 					if(null != baseFilePath)
 						Constants.BASE_FILE_PATH = baseFilePath;
+
+					logger.info("日志获取目录:" + Constants.BASE_FILE_PATH);
+
 					final File logPath = new File(Constants.BASE_FILE_PATH);
 					File list[] = logPath.listFiles();
 

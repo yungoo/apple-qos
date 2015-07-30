@@ -9,6 +9,8 @@ import java.util.Properties;
 import com.appleframework.qos.core.config.PropertyConfigurer;
 import com.appleframework.qos.collector.core.utils.Constants;
 import com.appleframework.qos.collector.core.utils.DateFormatUtils;
+import com.sun.tools.internal.jxc.ap.Const;
+import com.sun.tools.javac.code.Attribute;
 import org.apache.log4j.Appender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
@@ -85,8 +87,9 @@ public class LoggerInit {
             PropertyConfigurator.configure(defaultProperties);
 
             // 日志存放位置
+            String basePath = PropertyConfigurer.getString(Constants.LOGS_PATH, Constants.BASE_FILE_PATH);
             String date = DateFormatUtils.toString(now, datePattern);
-            String filePath = Constants.BASE_FILE_PATH + application + "_" + date + ".log";
+            String filePath = basePath + application + "_" + date + ".log";
             File logFile = new File(Constants.BASE_FILE_PATH);
             if(!logFile.exists()) {
             	logFile.mkdir();

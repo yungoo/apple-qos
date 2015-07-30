@@ -7,7 +7,9 @@ public class Constants {
 	public static final Pattern COMMA_SPLIT_PATTERN = Pattern.compile("\\s*[,]+\\s*");
 
 	public static final String APPLICATION_NAME = "application.name";
-	
+
+    public static final String LOGS_PATH = "qos.logs.dir";
+
 	public static final String LOCALHOST_KEY  = "localhost";
 	
 	public static final String DEFAULT_KEY_PREFIX = "default.";

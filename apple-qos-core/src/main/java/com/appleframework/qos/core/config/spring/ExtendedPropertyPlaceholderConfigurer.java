@@ -27,7 +27,10 @@ class ExtendedPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigure
             String stringValue = String.valueOf(entry.getValue());
             stringValue = helper.replacePlaceholders(stringValue, props);
 
-            systemProperties.put(stringKey, stringValue);
+            if (!systemProperties.contains(stringKey)){
+                System.out.println("=====>" + stringKey + ": " + stringValue);
+                systemProperties.put(stringKey, stringValue);
+            }
         }
     }
 
