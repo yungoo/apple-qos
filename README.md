@@ -1,22 +1,23 @@
 # apple-qos
-Zero Configure needed Log based QOS system.
-Support spring，dubbo，java.
+Zero configuration needed
+Log based QOS system.
+Support spring，dubbo and java.
 
-## Collector
-The unify log tool for GOS.
+## collector
+Unified Log tool for GOS.
 
-## Qos Agent
+## qos agent
 Collect the logs in runtime, and send to monitor via kafka.
 
-## Qos Monitor
+## qos monitor
 Consume Log message from kafka, calcuate and save to database.
 
-## Qos Statistics
+## qos statistics
 Support Web UI of Statisics results.
 
 # usage
 
-* Add Maven Dependency
+* add Maven Dependency
 ```
 	<dependency>
 		<groupId>com.appleframework.qos</groupId>
@@ -25,7 +26,7 @@ Support Web UI of Statisics results.
 	</dependency>
 ```
 
-* Integret the Collector
+* integret the Collector
 
 ```
 	<bean id="qosCollectInterceptor" class="com.appleframework.qos.collector.spring.CollectInterceptor"/>
@@ -35,10 +36,14 @@ Support Web UI of Statisics results.
 	</aop:config>
 ```
 
-* Run Monitor
-```./bin/qos_montior.sh start ./config/monitor.properties ```
+* run Monitor
+```
+	./bin/qos_montior.sh start ./config/monitor.properties 
+```
 
-# Run Agent
-``` ./bin/qos_agent.sh start ./config/agent.properties ```
+* Run Agent
+``` 
+	./bin/qos_agent.sh start ./config/agent.properties 
+```
 
 

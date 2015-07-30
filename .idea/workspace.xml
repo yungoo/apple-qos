@@ -7,45 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a8db6c9-ad11-4c89-94ed-bd92abe80bee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/apple-qos-server-statistics-0.0.2-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/maven-base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/maven-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/close.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/collapsed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/expanded.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/external.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_error_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_info_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_success_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/icon_warning_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/logos/build-by-maven-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/logos/build-by-maven-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/logos/maven-feather.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-statistics/target/site-webapp/images/newwindow.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/utils/Constants.java" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/utils/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java" afterPath="$PROJECT_DIR$/apple-qos-core/src/main/java/com/appleframework/qos/core/config/spring/ExtendedPropertyPlaceholderConfigurer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/java/com/appleframework/qos/server/agent/LogFileReadStarter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/src/main/java/com/appleframework/qos/collector/core/LoggerInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/config/monitor-dubbo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-core/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-dubbo/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-collector/apple-qos-collector-spring/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-core/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-core/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/pom.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-agent/src/main/resources/config/spring-agent.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/src/main/resources/system.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/classes/system.properties" afterPath="$PROJECT_DIR$/apple-qos-server/apple-qos-server-monitor/target/classes/system.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2a8db6c9-ad11-4c89-94ed-bd92abe80bee" name="Default" comment="" />
     <ignored path="apple-qos.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1258,12 +1220,12 @@
       <workItem from="1438135948219" duration="1264000" />
       <workItem from="1438137257832" duration="34986000" />
       <workItem from="1438182273715" duration="519000" />
-      <workItem from="1438182834453" duration="15380000" />
+      <workItem from="1438182834453" duration="15439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52149000" />
+    <option name="totallyTimeSpent" value="52208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1276,7 +1238,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="-201" width="1280" height="1001" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32563257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
