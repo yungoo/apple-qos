@@ -3,6 +3,7 @@ package com.appleframework.qos.server.agent;
 import com.appleframework.qos.collector.core.URL;
 
 import com.appleframework.qos.core.utils.ByteUtils;
+import com.appleframework.qos.core.utils.KryoSerializer;
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 
@@ -12,6 +13,8 @@ public class MonitorSendService {
 
 	private String topic;
 
+	private KryoSerializer kryoSerializer;
+
 	public void setProducer(Producer<String, byte[]> producer) {
 		this.producer = producer;
 	}
@@ -20,8 +23,19 @@ public class MonitorSendService {
 		this.topic = topic;
 	}
 
+	public void init() {
+		kryoSerializer = new KryoSerializer();
+		try {
+			kryoSerializer.init();
+			kryoSerializer.register(URL.class);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void send(URL url) {
-		byte[] dataBytes = ByteUtils.toBytes(url);
+//		byte[] dataBytes = ByteUtils.toBytes(url);
+		byte[] dataBytes = kryoSerializer.serialize(url);
 		KeyedMessage<String, byte[]> producerData = new KeyedMessage<String, byte[]>(
 				topic, dataBytes);
 		producer.send(producerData);

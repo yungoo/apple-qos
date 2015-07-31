@@ -15,13 +15,17 @@
   		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 
+	<context:annotation-config />
+	<context:component-scan base-package="com.appleframework.qos.server.statistics"/>
+	<mvc:annotation-driven />
+	<mvc:default-servlet-handler />
+
 	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" />
 
 	<bean id="viewNameTranslator" class="org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator" />
 	
 	<bean id="paginationDirective" class="com.appleframework.qos.server.statistics.freemarker.directive.PaginationDirective" />
 
-	<mvc:annotation-driven />
 	<!-- 拦截器链 -->
 	<mvc:interceptors>
 		<!-- <bean class="com.appleframework.web.springmvc.Interceptor.CsrfInterceptor" /> -->
@@ -29,7 +33,7 @@
 			<property name="paramName" value="lang" />
 		</bean>
 	</mvc:interceptors>
-	<mvc:default-servlet-handler />
+
 
 	<bean id="annotationMethodHandlerAdapter"
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />

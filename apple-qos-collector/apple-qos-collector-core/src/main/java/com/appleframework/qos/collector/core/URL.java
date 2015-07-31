@@ -64,13 +64,13 @@ public final class URL implements Serializable {
 
 	private final int port;
 
-    private final Map<String, String> parameters;
+    private final HashMap<String, String> parameters;
     
     // ==== cache ====
     
-    private volatile transient Map<String, Number> numbers;
+    private volatile transient HashMap<String, Number> numbers;
 
-    private volatile transient Map<String, URL> urls;
+    private volatile transient HashMap<String, URL> urls;
 
     private volatile transient String ip;
 
@@ -112,7 +112,7 @@ public final class URL implements Serializable {
 		} else {
 		    parameters = new HashMap<String, String>(parameters);
 		}
-		this.parameters = Collections.unmodifiableMap(parameters);
+		this.parameters = (HashMap<String, String>)parameters;
 	}
 
     /**
@@ -294,14 +294,14 @@ public final class URL implements Serializable {
     
     private Map<String, Number> getNumbers() {
         if (numbers == null) { // 允许并发重复创建
-            numbers = new ConcurrentHashMap<String, Number>();
+            numbers = new HashMap<String, Number>();
         }
         return numbers;
     }
 
     private Map<String, URL> getUrls() {
         if (urls == null) { // 允许并发重复创建
-            urls = new ConcurrentHashMap<String, URL>();
+            urls = new HashMap<String, URL>();
         }
         return urls;
     }

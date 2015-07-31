@@ -44,6 +44,18 @@
 		from qos_app_info
 		where code = #{code,jdbcType=VARCHAR}
 	</select>
+
+	<select id="findPage" resultMap="baseResultMap" parameterType="com.appleframework.qos.core.orm.PageQuery">
+		select
+		<include refid="baseColumnList" />
+		from
+		qos_app_info
+		<where>
+		<if test="keyword != null and keyword != ''">
+			name like '%${keyword}%'
+		</if>
+		</where>
+	</select>
 		
 	<update id="createTable">
 		CREATE TABLE IF NOT EXISTS qos.app_info (

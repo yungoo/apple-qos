@@ -16,7 +16,6 @@
 	
 	<!-- 启用注解识别功能 -->
 	<context:annotation-config />
-	<context:component-scan base-package="com.appleframework.qos.server.statistics"/>
 
 	<bean id="propertyConfigurer"
 		class="com.appleframework.qos.core.config.spring.ExtendedPropertyPlaceholderConfigurer">

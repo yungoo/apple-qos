@@ -1,20 +1,17 @@
 package com.appleframework.qos.collector.core;
 
-import java.io.File;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.Properties;
-
-
-import com.appleframework.qos.core.config.PropertyConfigurer;
 import com.appleframework.qos.collector.core.utils.Constants;
 import com.appleframework.qos.collector.core.utils.DateFormatUtils;
-import com.sun.tools.internal.jxc.ap.Const;
-import com.sun.tools.javac.code.Attribute;
+import com.appleframework.qos.core.config.PropertyConfigurer;
 import org.apache.log4j.Appender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
+import java.io.File;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.Properties;
 
 /**
  * 

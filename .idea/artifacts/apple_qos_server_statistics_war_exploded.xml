@@ -10,6 +10,9 @@
           <element id="archive" name="apple-qos-core-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="apple-qos-core" />
           </element>
+          <element id="library" level="project" name="Maven: com.esotericsoftware.kryo:kryo:2.24.0" />
+          <element id="library" level="project" name="Maven: com.esotericsoftware.minlog:minlog:1.2" />
+          <element id="library" level="project" name="Maven: org.objenesis:objenesis:2.1" />
           <element id="archive" name="apple-qos-collector-core-0.0.2-SNAPSHOT.jar">
             <element id="module-output" name="apple-qos-collector-core" />
           </element>

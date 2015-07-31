@@ -33,6 +33,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Properties;
+import java.util.function.Predicate;
+import java.util.regex.Pattern;
 
 /**
  * <p>
@@ -61,6 +63,10 @@ public class PaginationInterceptor implements Interceptor, Serializable {
     private static String _sql_regex = "[*]";
     /** DataBase dialect. */
     protected Dialect _dialect;
+
+    public PaginationInterceptor() {
+
+    }
 
     /**
      * Gets pagination total.
@@ -340,4 +346,5 @@ public class PaginationInterceptor implements Interceptor, Serializable {
             return boundSql;
         }
     }
+
 }

@@ -2,12 +2,19 @@ package com.appleframework.qos.server.statistics.service.impl;
 
 import javax.annotation.Resource;
 
+import com.appleframework.qos.core.orm.PageQuery;
+import com.appleframework.qos.core.orm.Pagination;
+import com.appleframework.qos.server.statistics.mybatis2.dto.table.PagingCriteria;
+import com.appleframework.qos.server.statistics.mybatis2.dto.table.SearchField;
+import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import com.appleframework.qos.server.core.entity.AppInfo;
 import com.appleframework.qos.server.statistics.dao.AppInfoDao;
 import com.appleframework.qos.server.statistics.service.AppInfoService;
+
+import java.util.List;
 
 @Service("appInfoService")
 public class AppInfoServiceImpl implements AppInfoService {
@@ -48,10 +55,16 @@ public class AppInfoServiceImpl implements AppInfoService {
 		}
 	}
 	
-	/*public List<AppInfo> findPage(Pagination page, String keyword) {
+	public List<AppInfo> findPage(Pagination page, String keyword) {
 		PageQuery query = PageQuery.create(page);
-		query.addParameters("keyword", keyword);
-		return appInfoDao.findPage(query);
-	}*/
+
+		List<SearchField> searchFields = Lists.newArrayList();
+		searchFields.add(new SearchField("keyword", false, true, keyword));
+		PagingCriteria criteria = PagingCriteria.createCriteriaWithSearch((int)page.getFirstResult(),
+				(int)page.getPageSize(), (int)page.getPageNo(), searchFields);
+
+//		query.addParameters("keyword", keyword);
+		return appInfoDao.findPage(criteria);
+	}
 
 }

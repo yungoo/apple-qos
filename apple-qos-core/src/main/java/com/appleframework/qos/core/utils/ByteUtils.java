@@ -10,17 +10,28 @@ import java.io.ObjectOutputStream;
  */
 public class ByteUtils {
 
+    private static KryoSerializer kryoSerializer;
+    static {
+        kryoSerializer = new KryoSerializer();
+        try {
+            kryoSerializer.init();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static byte[] toBytes(Object obj) {
         byte[] bytes = null;
         try {
-            ByteArrayOutputStream bo = new ByteArrayOutputStream();
-            ObjectOutputStream oo = new ObjectOutputStream(bo);
-            oo.writeObject(obj);
-
-            bytes = bo.toByteArray();
-
-            bo.close();
-            oo.close();
+            bytes = kryoSerializer.serialize(obj);
+//            ByteArrayOutputStream bo = new ByteArrayOutputStream();
+//            ObjectOutputStream oo = new ObjectOutputStream(bo);
+//            oo.writeObject(obj);
+//
+//            bytes = bo.toByteArray();
+//
+//            bo.close();
+//            oo.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -30,12 +41,13 @@ public class ByteUtils {
     public static Object toObject(byte[] bytes) {
         Object obj = null;
         try {
-            ByteArrayInputStream bi = new ByteArrayInputStream(bytes);
-            ObjectInputStream oi = new ObjectInputStream(bi);
-
-            obj = oi.readObject();
-            bi.close();
-            oi.close();
+            obj = kryoSerializer.deserialize(bytes);
+//            ByteArrayInputStream bi = new ByteArrayInputStream(bytes);
+//            ObjectInputStream oi = new ObjectInputStream(bi);
+//
+//            obj = oi.readObject();
+//            bi.close();
+//            oi.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

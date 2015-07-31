@@ -5,6 +5,9 @@ Support spring，dubbo and java.
 
 ## collector
 Unified Log tool for GOS.
+* spring
+* dubbo
+  collect the consumer api access data.
 
 ## qos agent
 Collect the logs in runtime, and send to monitor via kafka.

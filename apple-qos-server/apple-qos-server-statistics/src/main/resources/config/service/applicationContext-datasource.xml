@@ -13,6 +13,8 @@
         
 	<!-- 定义aspectj -->
 	<aop:aspectj-autoproxy proxy-target-class="true"/>
+	<context:annotation-config/>
+	<context:component-scan base-package="com.appleframework.qos.server.statistics"/>
 
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
@@ -31,15 +33,15 @@
 
 	<bean id="paginationInterceptor" class="com.appleframework.qos.server.statistics.mybatis2.PaginationInterceptor">
 		<property name="dbms" value="mysql"/>
-		<property name="sqlRegex" value="*.findPage"/>
+		<property name="sqlRegex" value=".*\.findPage.*"/>
 	</bean>
 
     <!-- MyBatis配置 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<!--<property name="plugins">-->
-			<!--<ref bean="paginationInterceptor"/>-->
-		<!--</property>-->
+		<property name="plugins">
+			<ref bean="paginationInterceptor"/>
+		</property>
 		<!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
 		<property name="typeAliasesSuperType" value="com.appleframework.qos.server.core.entity.BaseEntity"/>
 		<property name="typeAliasesPackage" value="com.appleframework.qos.server.core.entity" />

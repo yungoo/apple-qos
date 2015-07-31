@@ -24,7 +24,7 @@
 		<constructor-arg index="0" ref="producerConfig" />
 	</bean>
 
-	<bean id="monitorSendService" class="com.appleframework.qos.server.agent.MonitorSendService"
+	<bean id="monitorSendService" class="com.appleframework.qos.server.agent.MonitorSendService" init-method="init"
 		destroy-method="destroy">
 		<property name="producer" ref="producer" />
 		<property name="topic" value="${metadata.topic:qos_collect}" />

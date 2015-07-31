@@ -2,6 +2,7 @@ package com.appleframework.qos.server.monitor.receiver;
 
 import com.appleframework.qos.collector.core.URL;
 import com.appleframework.qos.core.utils.ByteUtils;
+import com.appleframework.qos.core.utils.KryoSerializer;
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;
 import kafka.javaapi.consumer.ConsumerConnector;
@@ -31,6 +32,8 @@ public abstract class ObjectMessageConsumer {
 
     private ExecutorService executorService;
 
+    private KryoSerializer kryoSerializer;
+
     public void setConsumerConfig(ConsumerConfig consumerConfig) {
         this.consumerConfig = consumerConfig;
     }
@@ -44,6 +47,14 @@ public abstract class ObjectMessageConsumer {
     }
 
     public void init() {
+        kryoSerializer = new KryoSerializer();
+        try {
+            kryoSerializer.init();
+            kryoSerializer.register(URL.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         consumer = kafka.consumer.Consumer.createJavaConsumerConnector(consumerConfig);
 
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap;
@@ -94,10 +105,31 @@ public abstract class ObjectMessageConsumer {
                 final String topic = messageAndMetadata.topic();
 
                 byte[] msg = messageAndMetadata.message();
-                URL url = (URL)ByteUtils.toObject(msg);
 
-                ObjectMessageConsumer.this.processMessage(url);
+                try {
+                    URL url = (URL) kryoSerializer.deserialize(msg);
+                    ObjectMessageConsumer.this.processMessage(url);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
+
+//    public static void main(final String[] args) throws Exception {
+//        KryoSerializer kryoSerializer = new KryoSerializer();
+//        kryoSerializer.init();
+//        kryoSerializer.register(URL.class);
+//
+//        URL r = new URL("c", "192.168.10.3", 8080);
+//        byte[] d = kryoSerializer.serialize(r);
+//
+//        KryoSerializer kryoSerializer2 = new KryoSerializer();
+//        kryoSerializer2.init();
+//        kryoSerializer2.register(URL.class);
+//        URL rn = (URL)kryoSerializer2.deserialize(d);
+//
+//        System.out.println(r.toString());
+//        System.out.println(rn.toFullString());
+//    }
 }
