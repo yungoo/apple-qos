@@ -37,7 +37,26 @@
 			#{updateTime, jdbcType=TIMESTAMP}
 		)
 	</insert>
-		
+
+	<update id="update" parameterType="com.appleframework.qos.server.core.entity.AppInfo">
+		update qos_app_info
+		SET
+		name = #{name, jdbcType=VARCHAR},
+		code = #{code, jdbcType=VARCHAR},
+		state = #{state, jdbcType=VARCHAR},
+		disorder = #{disorder, jdbcType=VARCHAR},
+		update_time = CURRENT_TIMESTAMP()
+		WHERE
+		id = #{id,jdbcType=BIGINT}
+	</update>
+
+	<select id="get" resultMap="baseResultMap" parameterType="java.lang.Long">
+		select
+		<include refid="baseColumnList" />
+		from qos_app_info
+		where id = #{id,jdbcType=BIGINT}
+	</select>
+
 	<select id="getByCode" resultMap="baseResultMap" parameterType="java.lang.String">
 		select
 		<include refid="baseColumnList" />
@@ -45,6 +64,13 @@
 		where code = #{code,jdbcType=VARCHAR}
 	</select>
 
+	<select id="countByCode" resultType="java.lang.Boolean" parameterType="java.lang.String">
+		select
+		count(1)
+		from qos_app_info
+		where code=#{code, jdbcType=VARCHAR}
+	</select>
+	
 	<select id="findPage" resultMap="baseResultMap" parameterType="com.appleframework.qos.core.orm.PageQuery">
 		select
 		<include refid="baseColumnList" />

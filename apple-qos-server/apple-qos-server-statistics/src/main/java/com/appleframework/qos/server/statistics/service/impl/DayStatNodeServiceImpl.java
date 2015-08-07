@@ -1,11 +1,16 @@
 package com.appleframework.qos.server.statistics.service.impl;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 import com.appleframework.qos.core.orm.MapQuery;
+import com.appleframework.qos.core.orm.PageQuery;
+import com.appleframework.qos.core.orm.Pagination;
+import com.appleframework.qos.server.core.entity.DayStatCode;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
@@ -44,4 +49,27 @@ public class DayStatNodeServiceImpl implements DayStatNodeService {
 		return dayStatNodeDao.getByDate(query);
 	}
 
+	@Override
+	public List<DayStatNode> findByAppAndDay(Date startDate, Date endDate, String consumerAppName, String providerAppName) {
+		MapQuery query = MapQuery.create();
+		query.addParameters("providerAppName", providerAppName);
+		query.addParameters("consumerAppName", consumerAppName);
+		query.addParameters("statDate", startDate);
+		query.addParameters("endDate", endDate);
+		return dayStatNodeDao.findByAppAndDay(query);
+	}
+
+	@Override
+	public Pagination findPageByAppAndDay(Pagination page, Date startDate, Date endDate, String consumerAppName, String providerAppName) {
+		PageQuery query = PageQuery.create(page);
+
+		query.addParameters("providerAppName", providerAppName);
+		query.addParameters("consumerAppName", consumerAppName);
+		query.addParameters("statDate", startDate);
+		query.addParameters("endDate", endDate);
+
+		List<DayStatNode> data = dayStatNodeDao.findPageByAppAndDay(query);
+		page.setList(data);
+		return page;
+	}
 }

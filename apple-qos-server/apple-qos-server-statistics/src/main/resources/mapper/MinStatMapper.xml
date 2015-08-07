@@ -130,6 +130,25 @@
 			id = #{id, jdbcType=BIGINT}
 	</update>
 	
+	<select id="findPage" parameterType="com.appleframework.qos.core.orm.PageQuery"
+			resultMap="baseResultMap">
+		SELECT
+		<include refid="baseColumnList" />
+		from qos_min_stat
+		<trim prefix="where" prefixOverrides="and">
+			<if test="statDate!=null">
+				stat_date = #{statDate, jdbcType=TIMESTAMP}
+			</if>
+			<if test="consumerAppName!=null">
+				and consumer_app_name like '%${consumerAppName}%'
+			</if>
+			<if test="providerAppName!=null">
+				and provider_app_name like '%${providerAppName}%'
+			</if>
+		</trim>
+		order by total_succ_per asc, fail_sum_number desc, fail_avg_elapsed desc
+	</select>
+	
 	<update id="createTable">
         CREATE TABLE IF NOT EXISTS qos_min_stat (
 			id bigint(20) NOT NULL AUTO_INCREMENT,

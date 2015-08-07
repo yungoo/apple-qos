@@ -17,6 +17,6 @@ public interface AppInfoDao {
 	
 	public Integer countByCode(String code);
 	
-	public List<AppInfo> findPage(PagingCriteria query);
+	public List<AppInfo> findPage(PageQuery query);
 		    
 }

@@ -1,17 +1,23 @@
 package com.appleframework.qos.server.statistics.service;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
+import com.appleframework.qos.core.orm.Pagination;
 import com.appleframework.qos.server.core.entity.DayStatNode;
 
 public interface DayStatNodeService {
 	
-	public void createTable();
+	void createTable();
 
-	public void save(DayStatNode dsn);
+	void save(DayStatNode dsn);
 	
-	public void update(DayStatNode dsn);
+	void update(DayStatNode dsn);
 	
-	public DayStatNode getByDate(Date date, Long consumerAppId, Long providerAppId, Long nodeId);
-	
+	DayStatNode getByDate(Date date, Long consumerAppId, Long providerAppId, Long nodeId);
+
+	List<DayStatNode> findByAppAndDay(Date startDate, Date endDate, String consumerAppName, String providerAppName);
+
+	Pagination findPageByAppAndDay(Pagination page, Date startDate, Date endDate, String consumerAppName, String providerAppName);
 }

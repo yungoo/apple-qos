@@ -4,6 +4,7 @@
 
 package com.appleframework.qos.server.statistics.mybatis2;
 
+import com.appleframework.qos.core.orm.PageQuery;
 import com.appleframework.qos.server.statistics.mybatis2.dialect.DBMS;
 import com.appleframework.qos.server.statistics.mybatis2.dialect.Dialect;
 import com.appleframework.qos.server.statistics.mybatis2.dialect.DialectClient;
@@ -27,6 +28,7 @@ import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.plugin.*;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
+import sun.jvm.hotspot.debugger.Page;
 
 import java.io.Serializable;
 import java.sql.Connection;
@@ -54,7 +56,7 @@ public class PaginationInterceptor implements Interceptor, Serializable {
     /** serial Version */
     private static final long serialVersionUID = -6075937069117597841L;
     private static final ThreadLocal<Integer> PAGINATION_TOTAL = new ThreadLocal<Integer>();
-    private static final ThreadLocal<PagingCriteria> PAGE_REQUEST = new ThreadLocal<PagingCriteria>();
+    private static final ThreadLocal<PageQuery> PAGE_REQUEST = new ThreadLocal<PageQuery>();
     /** logging */
     private static final Log log = LogFactory.getLog(PaginationInterceptor.class);
     /** mapped statement parameter index. */
@@ -85,7 +87,7 @@ public class PaginationInterceptor implements Interceptor, Serializable {
      *
      * @return the page request
      */
-    public static PagingCriteria getPageRequest() {
+    public static PageQuery getPageRequest() {
         return PAGE_REQUEST.get();
     }
 
@@ -101,56 +103,15 @@ public class PaginationInterceptor implements Interceptor, Serializable {
      * @param rowBounds rowBounds.
      * @return rowBounds.
      */
-    private static RowBounds offset_paging(RowBounds rowBounds, PagingCriteria pageRequest) {
+    private static RowBounds offset_paging(RowBounds rowBounds, PageQuery pageRequest) {
         // rowBuounds has offset.
         if (rowBounds.getOffset() == RowBounds.NO_ROW_OFFSET) {
             if (pageRequest != null) {
-                return new RowBounds(pageRequest.getDisplayStart(), pageRequest.getDisplaySize());
+                return new RowBounds((int)pageRequest.getPage().getFirstResult(),
+                        (int)pageRequest.getPage().getPageSize());
             }
         }
         return rowBounds;
-    }
-
-    /**
-     * Sort and filter sql.
-     *
-     *
-     * @param sql the sql
-     * @param pagingCriteria the paging criteria
-     * @return the string
-     */
-    private static String sortAndFilterSql(String sql, PagingCriteria pagingCriteria) {
-
-        boolean order = SqlRemoveHelper.containOrder(sql);
-        final List<SearchField> searchFields = pagingCriteria.getSearchFields();
-        if (searchFields != null && !searchFields.isEmpty()) {
-            List<String> where_field = Lists.newArrayList();
-            for (SearchField searchField : searchFields) {
-                // fix inject sql
-                where_field.add(searchField.getField() + StringHelper.LIKE_CHAR + StringHelper.likeValue(searchField.getValue()));
-            }
-            boolean where = SqlRemoveHelper.containWhere(sql);
-            String orderBy = StringHelper.EMPTY;
-            if (order) {
-                String[] sqls = sql.split(SqlRemoveHelper.ORDER_REGEX);
-                sql = sqls[0];
-                orderBy = CountHelper.SQL_ORDER + sqls[1];
-            }
-            sql = String.format((where ? CountHelper.OR_SQL_FORMAT : CountHelper.WHERE_SQL_FORMAT), sql
-                    , Joiner.on(CountHelper.OR_JOINER).skipNulls().join(where_field), orderBy);
-        }
-
-        final List<SortField> sortFields = pagingCriteria.getSortFields();
-        if (sortFields != null && !sortFields.isEmpty()) {
-            List<String> field_order = Lists.newArrayList();
-            for (SortField sortField : sortFields) {
-                field_order.add(sortField.getField() + StringHelper.BLANK_CHAR + sortField.getDirection().getDirection());
-            }
-            return String.format(order ? CountHelper.SQL_FORMAT : CountHelper.ORDER_SQL_FORMAT, sql
-                    , Joiner.on(StringHelper.DOT_CHAR).skipNulls().join(field_order));
-        }
-
-        return sql;
     }
 
     /**
@@ -202,25 +163,18 @@ public class PaginationInterceptor implements Interceptor, Serializable {
         return builder.build();
     }
 
-    /**
-     * perform paging intercetion.
-     *
-     * @param queryArgs Executor.query params.
-     */
     private void processIntercept(final Object[] queryArgs) {
         final MappedStatement ms = (MappedStatement) queryArgs[MAPPED_STATEMENT_INDEX];
         final Object parameter = queryArgs[1];
 
-        //the need for paging intercept.
         boolean interceptor = ms.getId().matches(_sql_regex);
-        //obtain paging information.
-        final PagingCriteria pageRequest = interceptor
-                ? PagingParametersFinder.instance.findCriteria(parameter)
-                : PagingCriteria.getDefaultCriteria();
-        PAGE_REQUEST.set(pageRequest);
+        if (!interceptor || !(parameter instanceof PageQuery)) {
+            return;
+        }
 
+        PageQuery pageQuery = (PageQuery) parameter;
         final RowBounds oldRow = (RowBounds) queryArgs[2];
-        final RowBounds rowBounds = (interceptor) ? offset_paging(oldRow, pageRequest) : oldRow;
+        final RowBounds rowBounds = (interceptor) ? offset_paging(oldRow, pageQuery) : oldRow;
         int offset = rowBounds.getOffset();
         int limit = rowBounds.getLimit();
 
@@ -233,6 +187,7 @@ public class PaginationInterceptor implements Interceptor, Serializable {
                 //get connection
                 connection = ms.getConfiguration().getEnvironment().getDataSource().getConnection();
                 int count = CountHelper.getCount(sql, connection, ms, parameter, boundSql, _dialect);
+                pageQuery.getPage().setTotalCount(count);
                 PAGINATION_TOTAL.set(count);
             } catch (SQLException e) {
                 log.error("The total number of access to the database failure.", e);
@@ -245,7 +200,7 @@ public class PaginationInterceptor implements Interceptor, Serializable {
                     log.error("Close the database connection error.", e);
                 }
             }
-            String new_sql = sortAndFilterSql(sql, pageRequest);
+            String new_sql = sql;
             if (_dialect.supportsLimit()) {
                 new_sql = _dialect.getLimitString(new_sql, offset, limit);
                 offset = RowBounds.NO_ROW_OFFSET;

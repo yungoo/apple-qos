@@ -57,14 +57,8 @@ public class AppInfoServiceImpl implements AppInfoService {
 	
 	public List<AppInfo> findPage(Pagination page, String keyword) {
 		PageQuery query = PageQuery.create(page);
-
-		List<SearchField> searchFields = Lists.newArrayList();
-		searchFields.add(new SearchField("keyword", false, true, keyword));
-		PagingCriteria criteria = PagingCriteria.createCriteriaWithSearch((int)page.getFirstResult(),
-				(int)page.getPageSize(), (int)page.getPageNo(), searchFields);
-
-//		query.addParameters("keyword", keyword);
-		return appInfoDao.findPage(criteria);
+		query.addParameters("keyword", keyword);
+		return appInfoDao.findPage(query);
 	}
 
 }

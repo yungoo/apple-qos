@@ -1,5 +1,6 @@
 package com.appleframework.qos.server.statistics.mybatis2.dto;
 
+import com.appleframework.qos.core.orm.PageQuery;
 import com.appleframework.qos.server.statistics.mybatis2.dto.table.PagingCriteria;
 import com.appleframework.qos.server.statistics.mybatis2.mvc.DataTablesResultSet;
 import com.google.common.base.Objects;
@@ -26,7 +27,7 @@ public class PageMyBatis<E> extends ArrayList<E> {
     /**
      * pagination information
      */
-    private final PagingCriteria pageable;
+    private final PageQuery pageable;
     /**
      * count resultset.
      */
@@ -39,7 +40,7 @@ public class PageMyBatis<E> extends ArrayList<E> {
      * @param pageable the pageable
      * @param total    the total
      */
-    public PageMyBatis(Collection<? extends E> content, PagingCriteria pageable, long total) {
+    public PageMyBatis(Collection<? extends E> content, PageQuery pageable, long total) {
         super(content);
 
         this.content.addAll(content);
@@ -72,7 +73,7 @@ public class PageMyBatis<E> extends ArrayList<E> {
      * @return the page
      */
     public DataTablesResultSet<E> warp() {
-        return new DataTablesResultSet<E>(pageable == null ? 0 : pageable.getPageNumber(), this);
+        return new DataTablesResultSet<E>(pageable == null ? 0 : (int)pageable.getPage().getPageNo(), this);
     }
 
     @Override

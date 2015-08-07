@@ -126,33 +126,35 @@
 			method = '${method}' and 
 			stat_date = #{statDate, jdbcType=TIMESTAMP} limit 1
 	</select>
-		
-	<!-- 
-	<select id="findPageByAppAndDay" resultMap="baseResultMap" parameterType="com.glsx.gsc.statistics.page.Query">
+
+	<select id="findPageByAppAndDay" resultMap="baseResultMap" parameterType="com.appleframework.qos.core.orm.PageQuery">
 		select 
 			<include refid="baseColumnList" /> 
-		from 
-			glsx_gsc_${queryParams.month}.glsx_stat_day_service_${queryParams.month}
-		where 
-			stat_date = #{queryParams.startDate, jdbcType=TIMESTAMP} 
-         	
-         	<if test="queryParams.consumerAppName!=null">  
-            	and consumer_app_name like '%${queryParams.consumerAppName}%' 
+		from
+			qos_stat_day_method
+		<trim prefix="where" prefixOverrides="and">
+			<if test="startDate!=null">
+				stat_date >= #{startDate, jdbcType=TIMESTAMP}
+			</if>
+			<if test="endDate!=null">
+				stat_date &lt;= #{endDate, jdbcType=TIMESTAMP}
+			</if>
+         	<if test="consumerAppName!=null">
+            	and consumer_app_name like '%${consumerAppName}%'
          	</if>
-         	<if test="queryParams.providerAppName!=null">  
-            	and provider_app_name like '%${queryParams.providerAppName}%' 
-         	</if>
-         	
-         	<if test="queryParams.service!=null">  
-            	and service like '%${queryParams.service}%' 
-         	</if>
-         	<if test="queryParams.method!=null">  
-            	and method like '%${queryParams.method}%' 
+         	<if test="providerAppName!=null">
+            	and provider_app_name like '%${providerAppName}%'
          	</if>
          	
+         	<if test="service!=null">
+            	and service like '%${service}%'
+         	</if>
+         	<if test="method!=null">
+            	and method like '%${method}%'
+         	</if>
+		</trim>
          	order by stat_date desc, total_sum_number desc
 	</select>
-	 -->
 	 
 	 <update id="createTable">
 		CREATE TABLE IF NOT EXISTS qos_stat_day_method (

@@ -8,7 +8,7 @@ import java.util.List;
 public interface AppInfoService {
 	
 	public AppInfo get(Long id);
-	
+
 	public void update(AppInfo appInfo) throws ServiceException;
 		
 	public List<AppInfo> findPage(Pagination page, String keyword);

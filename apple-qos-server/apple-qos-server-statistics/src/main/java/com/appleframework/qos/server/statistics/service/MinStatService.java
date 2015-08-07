@@ -8,7 +8,7 @@ import com.appleframework.qos.server.core.entity.MinStat;
 
 public interface MinStatService {
 	
-	public List<MinStat> findPageByAppAndDay(Pagination page, Date statDay,
+	Pagination findPageByAppAndDay(Pagination page, Date statDay,
 			String consumerAppName, String providerAppName);
 	
 }

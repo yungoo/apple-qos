@@ -25,7 +25,7 @@ public final class StringHelper {
      */
     public static final String LIKE_CHAR = " like ";
     private static final String INJECTION_SQL = ".*([';]+|(--)+).*";
-    private static String LIKE_FORMATE = "'%%s%'";
+    private static String LIKE_FORMATE = "'%%%s%%'";
 
     /**
      * <p>Checks if a CharSequence is not empty ("") and not null.</p>

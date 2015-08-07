@@ -2,17 +2,19 @@ package com.appleframework.qos.server.statistics.service;
 
 import java.util.Date;
 
+import com.appleframework.qos.core.orm.Pagination;
 import com.appleframework.qos.server.core.entity.DayStatMethod;
 
 public interface DayStatMethodService {
 	
-	public void createTable();
+	void createTable();
 
-	public void save(DayStatMethod dsm);
+	void save(DayStatMethod dsm);
 	
-	public void update(DayStatMethod dsm);
+	void update(DayStatMethod dsm);
 	
-	public DayStatMethod getByDate(Date statDate, Long consumerAppId, Long providerAppId,
+	DayStatMethod getByDate(Date statDate, Long consumerAppId, Long providerAppId,
 			String service, String method);
-	
+
+	Pagination findPageByAppAndDay(Pagination page, Date startDate, Date endDate, String consumerAppName, String providerAppName, String service, String method);
 }

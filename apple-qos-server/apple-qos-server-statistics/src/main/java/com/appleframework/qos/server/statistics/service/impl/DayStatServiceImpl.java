@@ -230,8 +230,6 @@ public class DayStatServiceImpl implements DayStatService {
 			}
 		}
 	}
-	
-	
 
 	public void method(Date statDate) {
 		List<MinCollect> list = minCollectService.findMethodByDate(statDate);

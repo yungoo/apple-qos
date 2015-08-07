@@ -82,7 +82,7 @@
 				</entry>
 				<entry key="xml_escape" value-ref="fmXmlEscape" />
 				<entry key="paging" value-ref="paginationDirective"/>
-				<!-- <entry key="datetime" value-ref="datetimeDirective"/> -->
+				<entry key="webRoot" value="${web.root}"/>
 			</map>
 		</property>
 	</bean>

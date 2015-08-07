@@ -96,7 +96,7 @@
 	<select id="sumFailureByApp" resultType="com.appleframework.qos.server.statistics.model.DaySumApp" 
 		parameterType="com.appleframework.qos.core.orm.MapQuery">
 		select sum(failure) as failure, sum(elapsed) as elapsed, max(max_elapsed) as maxElapsed
-		from qos.min_collect
+		from qos_min_collect
 		where failure > 0 and consumer_app_id = ${consumerAppId} and provider_app_id = ${providerAppId} 
 		and collect_date = #{collectDate, jdbcType=TIMESTAMP};
 	</select>

@@ -80,13 +80,12 @@
 			error_code = '${errorCode}' and 
 			stat_date = #{statDate, jdbcType=TIMESTAMP} limit 1
 	</select>
-	
-	<!-- 
+
 	<select id="findByAppAndDay" resultMap="baseResultMap" parameterType="map">
 		select 
 			<include refid="baseColumnList" /> 
-		from 
-			glsx_gsc_${month}.glsx_stat_day_code_${month}
+		from
+			qos_stat_day_code
 		where 1=1 
 			<if test="startDate!=null">  
             	and stat_date &gt;= #{startDate, jdbcType=TIMESTAMP} 
@@ -104,29 +103,28 @@
          	order by stat_date desc, total_sum_number desc
 	</select>
 	
-	<select id="findPageByAppAndDay" resultMap="baseResultMap" parameterType="com.appleframework.orm.mybatis.query.MapQuery">
+	<select id="findPageByAppAndDay" resultMap="baseResultMap" parameterType="com.appleframework.qos.core.orm.PageQuery">
 		select 
 			<include refid="baseColumnList" /> 
-		from 
-			glsx_gsc_${queryParams.month}.glsx_stat_day_code_${queryParams.month}
+		from
+			qos_stat_day_code
 		where 1=1 
-			<if test="queryParams.startDate!=null">  
-            	and stat_date &gt;= #{queryParams.startDate, jdbcType=TIMESTAMP} 
+			<if test="startDate!=null">
+            	and stat_date &gt;= #{startDate, jdbcType=TIMESTAMP}
          	</if>
-         	<if test="queryParams.endDate!=null">  
-            	and stat_date &lt;= #{queryParams.endDate, jdbcType=TIMESTAMP} 
+         	<if test="endDate!=null">
+            	and stat_date &lt;= #{endDate, jdbcType=TIMESTAMP}
          	</if>
          	
-         	<if test="queryParams.consumerAppName!=null">  
-            	and consumer_app_name like '%${queryParams.consumerAppName}%' 
+         	<if test="consumerAppName!=null">
+            	and consumer_app_name like '%${consumerAppName}%'
          	</if>
-         	<if test="queryParams.providerAppName!=null">  
-            	and provider_app_name like '%${queryParams.providerAppName}%' 
+         	<if test="providerAppName!=null">
+            	and provider_app_name like '%${providerAppName}%'
          	</if>
          	order by stat_date desc, total_sum_number desc
 	</select>
-	 -->
-	
+
 	<update id="createTable">
 		CREATE TABLE IF NOT EXISTS qos_stat_day_code (
 			id bigint(20) NOT NULL AUTO_INCREMENT,

@@ -20,13 +20,14 @@ public class MinStatServiceImpl implements MinStatService {
 	private MinStatDao minStatDao;
 	
 	@SuppressWarnings("deprecation")
-	public List<MinStat> findPageByAppAndDay(Pagination page, Date statDay,
+	public Pagination findPageByAppAndDay(Pagination page, Date statDay,
 			String consumerAppName, String providerAppName) {
 		PageQuery query = PageQuery.create(page);
 		query.addParameters("consumerAppName", consumerAppName);
 		query.addParameters("providerAppName", providerAppName);
-		query.addParameters("statDate", statDay.getDate());
-		query.addParameters("statMonth", statDay.getMonth());
-		return minStatDao.findPage(query);
+		query.addParameters("statDate", statDay);
+		List<MinStat> ret =  minStatDao.findPage(query);
+		page.setList(ret);
+		return page;
 	}
 }
