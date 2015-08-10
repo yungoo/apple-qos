@@ -8,16 +8,10 @@ import com.appleframework.qos.core.orm.PageQuery;
 import com.appleframework.qos.server.statistics.mybatis2.dialect.DBMS;
 import com.appleframework.qos.server.statistics.mybatis2.dialect.Dialect;
 import com.appleframework.qos.server.statistics.mybatis2.dialect.DialectClient;
-import com.appleframework.qos.server.statistics.mybatis2.dto.table.PagingCriteria;
-import com.appleframework.qos.server.statistics.mybatis2.dto.table.SearchField;
-import com.appleframework.qos.server.statistics.mybatis2.dto.table.SortField;
 import com.appleframework.qos.server.statistics.mybatis2.helper.CountHelper;
 import com.appleframework.qos.server.statistics.mybatis2.helper.Reflections;
-import com.appleframework.qos.server.statistics.mybatis2.helper.SqlRemoveHelper;
 import com.appleframework.qos.server.statistics.mybatis2.helper.StringHelper;
-import com.google.common.base.Joiner;
 import com.google.common.base.Preconditions;
-import com.google.common.collect.Lists;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
@@ -28,15 +22,11 @@ import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.plugin.*;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
-import sun.jvm.hotspot.debugger.Page;
 
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 import java.util.Properties;
-import java.util.function.Predicate;
-import java.util.regex.Pattern;
 
 /**
  * <p>

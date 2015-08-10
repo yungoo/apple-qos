@@ -34,7 +34,6 @@ public class MonitorSendService {
 	}
 
 	public void send(URL url) {
-//		byte[] dataBytes = ByteUtils.toBytes(url);
 		byte[] dataBytes = kryoSerializer.serialize(url);
 		KeyedMessage<String, byte[]> producerData = new KeyedMessage<String, byte[]>(
 				topic, dataBytes);

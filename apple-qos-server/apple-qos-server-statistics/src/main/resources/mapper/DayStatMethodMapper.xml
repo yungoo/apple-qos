@@ -137,7 +137,7 @@
 				stat_date >= #{startDate, jdbcType=TIMESTAMP}
 			</if>
 			<if test="endDate!=null">
-				stat_date &lt;= #{endDate, jdbcType=TIMESTAMP}
+				and stat_date &lt;= #{endDate, jdbcType=TIMESTAMP}
 			</if>
          	<if test="consumerAppName!=null">
             	and consumer_app_name like '%${consumerAppName}%'

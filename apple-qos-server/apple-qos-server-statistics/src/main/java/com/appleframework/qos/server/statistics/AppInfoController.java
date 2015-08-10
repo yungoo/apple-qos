@@ -1,15 +1,14 @@
 package com.appleframework.qos.server.statistics;
 
-import com.appleframework.qos.collector.core.utils.StringUtils;
 import com.appleframework.qos.core.orm.Pagination;
 import com.appleframework.qos.server.core.entity.AppInfo;
 import com.appleframework.qos.server.statistics.service.AppInfoService;
 import com.google.common.collect.Maps;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import sun.jvm.hotspot.debugger.Page;
 
 import javax.annotation.Resource;
 import java.util.List;

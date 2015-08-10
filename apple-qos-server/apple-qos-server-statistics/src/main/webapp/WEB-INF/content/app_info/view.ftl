@@ -5,8 +5,6 @@
 <title>应用详情</title>
 <#include "../commons/page_css.ftl" />
 <#include "../commons/page_js.ftl" />
-
-
 </head>
 
 <body>

@@ -121,7 +121,7 @@
 			  KEY app_id (consumer_app_id,provider_app_id),
 			  KEY error_code (error_code),
 			  KEY service (service)
-		) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 	</update>
 	
 </mapper>
